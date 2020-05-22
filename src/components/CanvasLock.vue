@@ -5,35 +5,35 @@
 <script>
 export default {
   props: {
-    width: {
+    width: { //canvas的宽度
       type: Number,
       default: 300
     },
-    height: {
+    height: { //canvas的高度
       type: Number,
       default: 300
     },
-    chooseType: {
+    chooseType: { //生成点的个数 3*3 4*4
       type: Number,
       default: 3
     },
     disbaled: {
-      type: Boolean,
+      type: Boolean, // 禁止事件响应
       default: false
     },
-    strokeStyle: {
+    strokeStyle: { // 画笔的颜色
       type: String,
       default: '#CFE6FF'
     },
-    fillStyle: {
+    fillStyle: { // 填充点的颜色，主要是手势解锁的点
       type: String,
       default: '#CFE6FF'
     },
-    pathLineWidth: {
+    pathLineWidth: { // 轨迹线的粗细
       type: Number,
       default: 3
     },
-    pathCircleWidth: {
+    pathCircleWidth: { // 生成点的粗细
       type: Number,
       default: 2
     }
