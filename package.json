@@ -1,0 +1,13 @@
+{
+  "name": "@wx/vue-lock",
+  "version": "0.1.0",
+  "description": "package project template",
+  "author": "xing.wang",
+  "license": "UNLICENSED",
+  "main": "src/index.js",
+  "files": [
+    "README.md",
+    "src",
+    "test"
+  ]
+}

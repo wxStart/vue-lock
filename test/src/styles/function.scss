@@ -1,0 +1,5 @@
+$baseFontSize: 750; //基于视觉稿横屏尺寸/100得出的基准font-size
+
+@function px2rem($val) {
+  @return $val * 20 / $baseFontSize * 1rem;
+}
