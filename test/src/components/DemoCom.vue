@@ -25,7 +25,7 @@ const errorColor = 'red';
 
 export default {
   components: {
-    CanvasLock,
+    CanvasLock
   },
   data() {
     return {
@@ -33,7 +33,7 @@ export default {
       disbaledDraw: true,
       lockStep: 0,
       firstPwd: null,
-      userHasPwd: window.sessionStorage['lock_password'] ? true : false,
+      userHasPwd: window.sessionStorage['lock_password'] ? true : false
     };
   },
   methods: {
@@ -95,14 +95,13 @@ export default {
     },
     async onEntryPwd(passWord) {
       //录入密码
-      const userCode = this.userId;
       const randomNumber = Math.random();
       const result = { ok: randomNumber > 0.3 ? true : false }; // 模拟接口失败
       if (result.ok) {
         Toast({
           message: '录入手势成功，请尝试解锁',
           iconClass: 'iconfont iconchenggong',
-          duration: 2000,
+          duration: 2000
         });
         //更新密码的状态
         this.userHasPwd = true;
@@ -113,7 +112,7 @@ export default {
         Toast({
           message: '录入手势解锁失败，请稍后重试',
           iconClass: 'iconfont icon71shibai',
-          duration: 2000,
+          duration: 2000
         });
         this.copyWriting = RSET_ENTER_PASSWORD;
         // 清除第一次的密码
@@ -134,13 +133,13 @@ export default {
       window.sessionStorage.removeItem('lock_password');
       this.userHasPwd = false;
       this.init();
-    },
+    }
   },
 
   mounted() {
     document.title = '手势认证';
     this.init();
-  },
+  }
 };
 </script>
 
