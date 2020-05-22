@@ -3,7 +3,7 @@
 ## 引入
 
 ```
-  npm  i  @wx/vue-lock
+  npm  i  vue-lock
 ```
 
 ## props 说明
@@ -55,3 +55,23 @@
 ### 提供服务
 
 drawStatusPoint(color) // 填充点的颜色，通过ref调用 
+
+
+### 使用
+
+```
+// 引入
+
+import { CanvasLock } from 'vue-lock';
+
+// 注册
+ components: {
+    CanvasLock,
+  },
+
+// 使用
+
+ <canvas-lock ref="canvas" @drawEnd="drawEnd" :disbaled="disbaledDraw"></canvas-lock>
+
+
+```
