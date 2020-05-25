@@ -8,11 +8,11 @@
 import DemoCom from './components/DemoCom';
 export default {
   components: {
-    DemoCom,
+    DemoCom
   },
   data() {
     return {
-      loading: true,
+      loading: true
     };
   },
   methods: {
@@ -23,11 +23,11 @@ export default {
       let htmlDom = document.getElementsByTagName('html')[0];
       //设置根元素字体大小
       htmlDom.style.fontSize = htmlWidth / 20 + 'px';
-    },
+    }
   },
   mounted() {
     this.initFontSize();
-  },
+  }
 };
 </script>
 

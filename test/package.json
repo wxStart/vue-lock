@@ -4,7 +4,8 @@
   "description": "template-test",
   "author": "xing.wang",
   "scripts": {
-    "serve": "vue-cli-service serve"
+    "serve": "vue-cli-service serve",
+    "lint": "vue-cli-service lint"
   },
   "dependencies": {
     "blueimp-md5": "^2.16.0",
