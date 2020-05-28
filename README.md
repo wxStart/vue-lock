@@ -51,11 +51,9 @@
 @drawEnd 画结束后的回调
 ```
 
-
 ### 提供服务
 
-drawStatusPoint(color) // 填充点的颜色，通过ref调用 
-
+drawStatusPoint(color) // 填充点的颜色，通过 ref 调用
 
 ### 使用
 
@@ -74,4 +72,16 @@ import { CanvasLock } from 'vue-lock';
  <canvas-lock ref="canvas" @drawEnd="drawEnd" :disbaled="disbaledDraw"></canvas-lock>
 
 
+```
+
+### 示例
+
+<img style="width:300px" src='./test/src/assets/imgs/test.png'>
+<br>
+<img style="width:300px" src='./test/src/assets/imgs/test2.png'>
+
+```
+  $ cd test
+  $ npm install
+  $ npm run  serve
 ```
