@@ -120,7 +120,7 @@ export default {
       }
     },
     async onLogin(passWord) {
-      const result = { ok: passWord == window.localStorage['lock_password'] ? true : false }; //模拟接口验证
+      const result = { ok: passWord == window.sessionStorage['lock_password'] ? true : false }; //模拟接口验证
       if (result.ok) {
         this.copyWriting = PASS_OK;
       } else {
